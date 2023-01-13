@@ -22,7 +22,7 @@ public class JPushEventReceiver extends JPushMessageReceiver {
     private static final String TAG = JPushEventReceiver.class.getSimpleName();
 
     @Override
-    public void onTagOperatorResult(Context context, JPushMessage jPushMessage) {
+    public void onTagOperatorResult(Context context, final JPushMessage jPushMessage) {
         super.onTagOperatorResult(context, jPushMessage);
         JLogger.d(TAG,"onTagOperatorResult:"+jPushMessage);
 
@@ -43,7 +43,7 @@ public class JPushEventReceiver extends JPushMessageReceiver {
     }
 
     @Override
-    public void onCheckTagOperatorResult(Context context, JPushMessage jPushMessage) {
+    public void onCheckTagOperatorResult(Context context, final JPushMessage jPushMessage) {
         super.onCheckTagOperatorResult(context, jPushMessage);
 
         JLogger.d(TAG,"onCheckTagOperatorResult:"+jPushMessage);
@@ -58,7 +58,7 @@ public class JPushEventReceiver extends JPushMessageReceiver {
     }
 
     @Override
-    public void onAliasOperatorResult(Context context, JPushMessage jPushMessage) {
+    public void onAliasOperatorResult(Context context, final JPushMessage jPushMessage) {
         super.onAliasOperatorResult(context, jPushMessage);
 
         JLogger.d(TAG,"onAliasOperatorResult:"+jPushMessage);
@@ -102,7 +102,7 @@ public class JPushEventReceiver extends JPushMessageReceiver {
     }
 
     @Override
-    public void onMobileNumberOperatorResult(Context context, JPushMessage jPushMessage) {
+    public void onMobileNumberOperatorResult(Context context, final JPushMessage jPushMessage) {
         super.onMobileNumberOperatorResult(context, jPushMessage);
         JLogger.d(TAG,"onMobileNumberOperatorResult:"+jPushMessage);
 
