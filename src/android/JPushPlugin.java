@@ -249,6 +249,7 @@ public class JPushPlugin extends CordovaPlugin {
 
     void init(JSONArray data, CallbackContext callbackContext) {
         JPushInterface.setNotificationCallBackEnable(mContext, true);
+        JCoreInterface.setWakeEnable(mContext, false);
         JPushInterface.init(mContext);
     }
 
