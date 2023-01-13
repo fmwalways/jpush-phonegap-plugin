@@ -32,6 +32,7 @@ import cn.jpush.android.api.JPushInterface;
 import cn.jpush.android.api.TagAliasCallback;
 import cn.jpush.android.data.JPushLocalNotification;
 import cn.jiguang.api.utils.JCollectionAuth;
+import cn.jiguang.api.JCoreInterface;
 
 public class JPushPlugin extends CordovaPlugin {
 
